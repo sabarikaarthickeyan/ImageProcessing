@@ -11,9 +11,34 @@
 
 <h1>Image Processing</h1><hr>
 
-<form method="post" action="/gray" enctype="multipart/form-data"><br><br>
+<form method="post" action="/new" enctype="multipart/form-data"><br><br>
 
-    <h2>Select an Image for adding a Black & White effect to it.</h2>
+    <h2>Select an Image for adding effect to it.</h2>
+
+    <select name = "image_selection" >
+    	<option class = "option" value = "grey">
+    		Grey
+    	</option>
+        <option class = "option" value = "sketch">
+    		Sketch
+    	</option>
+        <option class = "option" value = "oil" >
+            Oil
+        </option>
+        <option class = "option" value = "rgb">
+            RGB
+        </option>
+        <option class = "option" value = "water" >
+            Water
+        </option>
+        <option class = "option" value = "invert" >
+            Invert
+        </option>
+        <option class = "option" value="hdr">
+            HDR
+        </option>
+    	
+    </select>
 
     <input class="btn btn-primary btn-lg" type="file" name="file" ><br><br>
 
